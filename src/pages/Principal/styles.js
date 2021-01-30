@@ -1,51 +1,14 @@
 import styled, { css } from "styled-components/native";
 import { Dimensions } from "react-native";
 
-export const SafeAreaView = styled.SafeAreaView`
-  flex: 1;
-  align-items: center;
-  padding-top: 40px;
-`;
-
-export const Image = styled.Image`
-  margin: 40px;
-  padding: 80px;
-`;
-export const ViewActivity = styled.View`
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding-top: 40px;
-`;
-
-export const View = styled.View`
-  flex: 2;
-  align-items: center;
-  padding-top: 40px;
-`;
-
 export const PrincipalView = styled.ScrollView`
-  padding: 40px 0;
   flex: 1;
-`;
-
-export const ButtonContainer = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 20px 20px 20px;
-`;
-
-export const CategoryView = styled.ScrollView`
-  margin-top: 20px;
-  height: 90px;
 `;
 
 export const SelectType = styled.View`
   flex-direction: row;
   text-align: left;
-  margin: 0 20px 10px 20px;
+  padding: 0 0 20px 20px;
   font-weight: bold;
   width: ${Dimensions.get("window").width}px;
 `;
@@ -64,11 +27,23 @@ export const TextTypeSelect = styled.Text`
       : css``}
 `;
 
+export const CategoryView = styled.ScrollView`
+  height: 90px;
+  width: ${Dimensions.get("window").width - 10}px;
+`;
+
 export const BannerView = styled.ScrollView`
   margin-top: 20px;
   height: 180px;
   flex-direction: row;
   width: ${Dimensions.get("window").width - 10}px;
+`;
+
+export const TitleRestaurants = styled.Text`
+  text-align: left;
+  margin: 40px 20px 10px 20px;
+  font-weight: bold;
+  width: ${Dimensions.get("window").width}px;
 `;
 
 export const ViewRestaurants = styled.View`
@@ -77,9 +52,15 @@ export const ViewRestaurants = styled.View`
   width: ${Dimensions.get("window").width - 50}px;
 `;
 
-export const TitleRestaurants = styled.Text`
-  text-align: left;
-  margin: 40px 20px 10px 20px;
-  font-weight: bold;
-  width: ${Dimensions.get("window").width}px;
+export const ViewActivity = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+`;
+
+export const SafeAreaView = styled.SafeAreaView`
+  flex: 1;
+  align-items: center;
+  padding-top: 40px;
 `;

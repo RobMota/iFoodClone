@@ -4,7 +4,9 @@ export const CategoryView = styled.View`
   margin-left: 20px;
   align-items: center;
 `;
-export const CategoryPhoto = styled.Image``;
+export const CategoryPhoto = styled.Image`
+  margin-right: 5px;
+`;
 export const CategoryText = styled.Text`
   margin-top: 5px;
 `;
